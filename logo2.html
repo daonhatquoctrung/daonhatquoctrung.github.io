@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="/images/background.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  
+  <h1 class="name">
+    <span>TUG</span>
+  </h1>
+  
+  <div class="social">
+    <a href="https://www.facebook.com"><img src="/images/logofb.avif" alt="Facebook"></a>
+    <a href="https://www.instagram.com"><img src="/images/logoins.webp" alt="Instagram"></a>
+    <a href="https://www.youtube.com"><img src="/images/logoyt.avif" alt="Youtube"></a>
+  </div>
+	</div>
+	<script src="script.js"></script>
+</body>
+<script>
+  const icons = document.querySelectorAll('.icons a');
+
+icons.forEach(icon => {
+  icon.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(icon.href);
+  });
+});
+</script>
+</html>
